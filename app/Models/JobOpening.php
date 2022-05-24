@@ -10,6 +10,16 @@ class JobOpening extends Model
 {
     use SoftDeletes;
 
+    public static function validate($request)
+    {
+        // Complete validation !!!
+
+        $request->validate([
+            "country" => "required|max:255",
+            "job_description" => "required",
+        ]);
+    }
+
     public function getId()
     {
         return $this->attributes['ID'];

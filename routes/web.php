@@ -22,4 +22,7 @@ Route::get('/job_openings/detail/{id}', 'App\Http\Controllers\JobOpeningsControl
 Route::get('/admin', 'App\Http\Controllers\AdminHomeController@index')->name("admin.home.index");
 Route::get('/admin/job_openings', 'App\Http\Controllers\AdminJobOpeningsController@index')->name("admin.job_openings.index");
 Route::get('/admin/job_openings/create', 'App\Http\Controllers\AdminJobOpeningsController@create')->name("admin.job_openings.create");
-Route::post('/admin/products/store', 'App\Http\Controllers\AdminJobOpeningsController@store')->name("admin.job_openings.store");
+Route::post('/admin/job_openings/store', 'App\Http\Controllers\AdminJobOpeningsController@store')->name("admin.job_openings.store");
+Route::delete('/admin/job_openings/{id}/delete', 'App\Http\Controllers\AdminJobOpeningsController@delete')->name("admin.job_openings.delete");
+Route::get('/admin/job_openings/{id}/edit', 'App\Http\Controllers\AdminJobOpeningsController@edit')->name("admin.job_openings.edit");
+Route::put('/admin/job_openings/{id}/update', 'App\Http\Controllers\AdminJobOpeningsController@update')->name("admin.job_openings.update");
