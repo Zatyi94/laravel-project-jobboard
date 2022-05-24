@@ -17,7 +17,7 @@
                 <p class="card-text"><b>Requirements:</b> {{ $viewData["job_opening"]->getRequirements() }}</p>
                 <p class="card-text"><b>Salary:</b>{{ $viewData["job_opening"]->getSalary() }}</p>
                 <p class="card-text"><b>Start date:</b> {{ $viewData["job_opening"]->getStartDate() }}</p>
-                <p class="card-text"><small class="text-muted">Apply</small></p>
+                <button type="button" class="btn btn-primary">Apply</button>
 
             </div>
         </div>
