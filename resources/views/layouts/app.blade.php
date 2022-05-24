@@ -22,6 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active" href="{{ route('home.index') }}">Home</a>
+                    <a class="nav-link active" href="{{ route('job_openings.index') }}">Job Openings</a>
                     <a class="nav-link active" href="{{ route('home.about') }}">About</a>
                 </div>
             </div>
@@ -50,6 +51,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
 </body>
+
+
 
 
 
