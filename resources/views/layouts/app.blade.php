@@ -38,19 +38,22 @@
         @yield('content')
     </div>
     <!-- footer -->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container">
-            <small>
-                Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank" href="">
-                    Zatykó Nóra
-                </a> - <b>Ide kell majd valami Link</b>
-            </small>
+    <footer id="footer">
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>
+                    Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank" href="">
+                        Zatykó Nóra
+                    </a> - <b>Ide kell majd valami Link</b>
+                </small>
+            </div>
         </div>
-    </div>
+    </footer>
     <!-- footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
 </body>
+
 
 
 
