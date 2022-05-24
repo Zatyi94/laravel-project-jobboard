@@ -47,12 +47,23 @@
                     <td>{{ $job_opening->getCreatedAt() }}</td>
                     <td>{{ $job_opening->getUpdatedAt() }}</td>
                     <td>{{ $job_opening->getDeletedAt() }}</td>
-                    <td><a class="nav-link active" href="#">Edit</a> </td>
-                    <td><a class="nav-link active" href="#">Delete</a> </td>
+                    <td><a class="btn btn-primary"
+                            href="{{route('admin.job_openings.edit', ['id'=> $job_opening->getId()])}}">
+                            <i class="bi bi-pencil-fill"></i>
+                        </a></td>
+                    <td>
+                        <form action="{{ route('admin.job_openings.delete', $job_opening->getId())}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </form>
                 </tr>
                 @endforeach
             </tbody>
         </table>
     </div>
 </div>
+
 @endsection

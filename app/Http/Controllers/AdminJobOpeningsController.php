@@ -27,14 +27,38 @@ class AdminJobOpeningsController extends Controller
     public function store(Request $request)
     {
         // var_dump('Form: ', $request->input('country'));
+        //  Finish validation in model and set
 
-        $request->validate([
-            "country" => "required|max:255",
-            "job_description" => "required",
-        ]);
+        JobOpening::validate($request);
 
         $jobOpening = new JobOpening();
         $jobOpening->setCountry($request->input('country'));
+        // $jobOpening->save();
+
+        return redirect()->route('admin.job_openings.index');
+    }
+
+    public function delete($id)
+    {
+        JobOpening::destroy($id);
+        return back();
+    }
+
+    public function edit($id)
+    {
+        $viewData = [];
+        $viewData["title"] = "Admin Page - Edit Job Opening - Job Board";
+        $viewData["job_opening"] = JobOpening::findOrFail($id);
+        return view('admin.job_openings.edit')->with("viewData", $viewData);
+    }
+
+    public function update(Request $request, $id)
+    {
+        JobOpening::validate($request);
+
+        $jobOpening = JobOpening::findOrFail($id);
+        $jobOpening->setCountry($request->input('country'));
+
         // $jobOpening->save();
 
         return redirect()->route('admin.job_openings.index');
