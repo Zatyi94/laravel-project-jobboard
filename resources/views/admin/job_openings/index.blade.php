@@ -1,6 +1,11 @@
 @extends('layouts.admin')
 @section('title', $viewData["title"])
 @section('content')
+<div style="margin-bottom: 2%;">
+    <!-- <button type="button" class="btn btn-primary">Create</button> -->
+    <a href="{{ url('/admin/job_openings/create') }}" class="btn btn-xs btn-info pull-right">Create</a>
+</div>
+
 <div class="card">
     <div class="card-header">
         Manage Job Openings
@@ -42,8 +47,8 @@
                     <td>{{ $job_opening->getCreatedAt() }}</td>
                     <td>{{ $job_opening->getUpdatedAt() }}</td>
                     <td>{{ $job_opening->getDeletedAt() }}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a class="nav-link active" href="#">Edit</a> </td>
+                    <td><a class="nav-link active" href="#">Delete</a> </td>
                 </tr>
                 @endforeach
             </tbody>

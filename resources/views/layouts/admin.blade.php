@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous" />
     <link href="{{ asset('/css/admin.css') }}" rel="stylesheet" />
-    <title>@yield('title', 'Admin - Online Store')</title>
+    <title>@yield('title', 'Admin - Job Board')</title>
 </head>
 
 <body>
@@ -19,8 +19,8 @@
             </a>
             <hr />
             <ul class="nav flex-column">
-                <li><a href="{{ route('admin.home.index') }}" class="nav-link text-white">- Admin - Home</a></li>
-                <li><a href="{{ route('admin.job_openings.index') }}" class="nav-link text-white">- Admin - Job
+                <li><a href="{{ route('admin.home.index') }}" class="nav-link text-white">- Home</a></li>
+                <li><a href="{{ route('admin.job_openings.index') }}" class="nav-link text-white">- Job
                         Openings</a>
                 </li>
                 <li>
@@ -54,6 +54,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
 </body>
+
 
 
 
