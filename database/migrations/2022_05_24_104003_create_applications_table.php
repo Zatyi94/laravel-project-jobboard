@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
+            $table->string('job_title', 50);
+            $table->integer('job_id');
+            $table->string('user_name', 50);
+            $table->integer('user_id');
+            $table->string('linkedin_url', 50);
+            $table->binary('resume');
             $table->timestamps();
         });
     }
