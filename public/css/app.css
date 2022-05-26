@@ -14,7 +14,7 @@ nav {
     height: 18vw;
     object-fit: cover;
 }
-#footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;

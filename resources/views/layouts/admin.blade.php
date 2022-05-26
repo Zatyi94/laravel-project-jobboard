@@ -42,13 +42,13 @@
         </div>
     </div>
     <!-- footer -->
-    <footer id="footer">
+    <footer>
         <div class="copyright py-4 text-center text-white">
             <div class="container">
                 <small>
-                    Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank" href="">
+                    Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank" href="#">
                         Zatykó Nóra
-                    </a> - <b>Ide kell majd valami Link</b>
+                    </a>
                 </small>
             </div>
         </div>
