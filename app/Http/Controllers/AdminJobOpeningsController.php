@@ -50,9 +50,11 @@ class AdminJobOpeningsController extends Controller
 
     public function update(Request $request, $id)
     {
+
         JobOpening::validate($request);
 
         $jobOpening = JobOpening::findOrFail($id);
+
         AdminJobOpeningsController::setCommonFields($jobOpening, $request);
         $jobOpening->setUpdatedAt(date("Y-m-d H:i:s"));
 

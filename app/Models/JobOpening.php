@@ -10,6 +10,8 @@ class JobOpening extends Model
 {
     use SoftDeletes;
 
+    protected $primaryKey = 'ID';
+
     public static function validate($request)
     {
         $request->validate([
