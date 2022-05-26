@@ -13,7 +13,7 @@ class JobOpening extends Model
     public static function validate($request)
     {
         $request->validate([
-            "country" => "required|max:255",
+            "country" => "required",
             "city" => "required",
             "industry" => "required",
             "language_required" => "required",

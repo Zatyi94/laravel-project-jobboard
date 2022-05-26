@@ -44,13 +44,14 @@ class AdminJobOpeningsController extends Controller
         $viewData = [];
         $viewData["title"] = "Admin Page - Edit Job Opening - Job Board";
         $viewData["job_opening"] = JobOpening::findOrFail($id);
+
         return view('admin.job_openings.edit')->with("viewData", $viewData);
     }
 
     public function update(Request $request, $id)
     {
         JobOpening::validate($request);
-        error_log('Some message here.');
+
         $jobOpening = JobOpening::findOrFail($id);
         AdminJobOpeningsController::setCommonFields($jobOpening, $request);
         $jobOpening->setUpdatedAt(date("Y-m-d H:i:s"));

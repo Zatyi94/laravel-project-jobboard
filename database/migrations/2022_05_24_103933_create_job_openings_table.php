@@ -15,7 +15,18 @@ return new class extends Migration
     {
         Schema::create('job_openings', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('country');
+            $table->string('city');
+            $table->string('industry');
+            $table->string('language_required');
+            $table->string('job_title');
+            $table->text('job_description');
+            $table->text('requirements');
+            $table->string('salary');
+            $table->string('start_date');
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
+            $table->timestamp('deleted_at');
         });
     }
 

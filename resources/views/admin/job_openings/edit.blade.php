@@ -103,20 +103,9 @@
                 <label class="form-label">Requirements</label>
                 <textarea class="form-control" name="requirements"
                     rows="3">{{ $viewData['job_opening']->getRequirements() }}</textarea>
-
-
-
-           
- </div>
+            </div>
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>
     </div>
-
-
-
-
-
 </div>
-
-
 @endsection
