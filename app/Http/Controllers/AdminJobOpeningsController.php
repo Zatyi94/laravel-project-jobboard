@@ -26,22 +26,17 @@ class AdminJobOpeningsController extends Controller
 
     public function store(Request $request)
     {
-        // var_dump('Form: ', $request->input('country'));
-        //  Finish validation in model and set
-
         JobOpening::validate($request);
 
+        $created_at = date("Y-m-d H:i:s");
         $jobOpening = new JobOpening();
-        $jobOpening->setCountry($request->input('country'));
-        // $jobOpening->save();
+        AdminJobOpeningsController::setCommonFields($jobOpening, $request);
+        $jobOpening->setCreatedAt($created_at);
+        $jobOpening->setUpdatedAt($created_at);
+
+        $jobOpening->save();
 
         return redirect()->route('admin.job_openings.index');
-    }
-
-    public function delete($id)
-    {
-        JobOpening::destroy($id);
-        return back();
     }
 
     public function edit($id)
@@ -55,12 +50,36 @@ class AdminJobOpeningsController extends Controller
     public function update(Request $request, $id)
     {
         JobOpening::validate($request);
-
+        error_log('Some message here.');
         $jobOpening = JobOpening::findOrFail($id);
-        $jobOpening->setCountry($request->input('country'));
+        AdminJobOpeningsController::setCommonFields($jobOpening, $request);
+        $jobOpening->setUpdatedAt(date("Y-m-d H:i:s"));
 
-        // $jobOpening->save();
+        $jobOpening->save();
 
         return redirect()->route('admin.job_openings.index');
+    }
+
+    public function delete($id)
+    {
+        $jobOpening = JobOpening::findOrFail($id);
+        $jobOpening->setDeletedAt(date("Y-m-d H:i:s"));
+
+        $jobOpening->save();
+
+        return back();
+    }
+
+    private function setCommonFields($jobOpening, $request)
+    {
+        $jobOpening->setCountry($request->input('country'));
+        $jobOpening->setCity($request->input('city'));
+        $jobOpening->setIndustry($request->input('industry'));
+        $jobOpening->setLanguageRequired($request->input('language_required'));
+        $jobOpening->setJobTitle($request->input('job_title'));
+        $jobOpening->setJobDescription($request->input('job_description'));
+        $jobOpening->setRequirements($request->input('requirements'));
+        $jobOpening->setSalary($request->input('salary'));
+        $jobOpening->setStartDate($request->input('start_date'));
     }
 }

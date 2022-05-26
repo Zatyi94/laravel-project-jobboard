@@ -12,11 +12,16 @@ class JobOpening extends Model
 
     public static function validate($request)
     {
-        // Complete validation !!!
-
         $request->validate([
             "country" => "required|max:255",
+            "city" => "required",
+            "industry" => "required",
+            "language_required" => "required",
+            "job_title" => "required",
             "job_description" => "required",
+            "requirements" => "required",
+            "salary" => "required",
+            "start_date" => "required",
         ]);
     }
 
