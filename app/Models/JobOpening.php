@@ -10,7 +10,6 @@ class JobOpening extends Model
 {
     use SoftDeletes;
 
-    protected $primaryKey = 'ID';
 
     public static function validate($request)
     {
@@ -29,12 +28,12 @@ class JobOpening extends Model
 
     public function getId()
     {
-        return $this->attributes['ID'];
+        return $this->attributes['id'];
     }
 
     public function setId($id)
     {
-        $this->attributes['ID'] = $id;
+        $this->attributes['id'] = $id;
     }
 
     public function getCountry()

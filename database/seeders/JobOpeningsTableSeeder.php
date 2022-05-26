@@ -22,7 +22,7 @@ class JobOpeningsTableSeeder extends Seeder
         DB::table('job_openings')->insert(array(
             0 =>
             array(
-                'ID' => 1,
+                'id' => 1,
                 'country' => 'Austria',
                 'city' => 'Vienna',
                 'industry' => 'IT',
@@ -41,7 +41,7 @@ Setting up the milestones for the project, PM, Budget Consumed analysis.',
             ),
             1 =>
             array(
-                'ID' => 2,
+                'id' => 2,
                 'country' => 'Hungary',
                 'city' => 'Budapest',
                 'industry' => 'IT',
@@ -61,7 +61,7 @@ English, both written and spoken.',
             ),
             2 =>
             array(
-                'ID' => 3,
+                'is' => 3,
                 'country' => 'Hungary',
                 'city' => 'Budapest',
                 'industry' => 'Financial',
