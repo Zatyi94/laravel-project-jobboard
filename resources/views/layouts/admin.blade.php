@@ -47,7 +47,7 @@
             <div class="container">
                 <small>
                     Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank" href="#">
-                        Zatykó Nóra
+                        Nóra Zatykó
                     </a>
                 </small>
             </div>

@@ -26,8 +26,8 @@ hr {
     border-bottom: 1px solid #e3e6f0;
 }
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 2.5rem; /* Footer height */
+    height: 4rem; /* Footer height */
 }
