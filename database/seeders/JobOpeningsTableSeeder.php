@@ -31,9 +31,9 @@ class JobOpeningsTableSeeder extends Seeder
                 'requirements' => 'ezisazis',
                 'salary' => '1.600.000 HUF',
                 'start_date' => '2022-02-23 08:00:00',
+                'deleted_at' => '2022-06-05 13:29:59',
                 'created_at' => '2022-06-05 15:29:59',
                 'updated_at' => '2022-06-05 13:29:59',
-                'deleted_at' => '2022-06-05 13:29:59',
             ),
             1 => 
             array (
@@ -50,9 +50,9 @@ Direct reporting to the Country Head of Operations.
 Setting up the milestones for the project, PM, Budget Consumed analysis.',
                 'salary' => '60000 EUR',
                 'start_date' => '2022-08-24 08:39:04',
+                'deleted_at' => '2022-06-05 19:18:13',
                 'created_at' => '2022-05-24 08:43:09',
                 'updated_at' => '2022-05-24 08:43:09',
-                'deleted_at' => NULL,
             ),
             2 => 
             array (
@@ -70,9 +70,9 @@ different IT systems.',
 English, both written and spoken.',
                 'salary' => '2000 EUR / month',
                 'start_date' => '2022-12-01 08:43:35',
+                'deleted_at' => '2022-06-05 19:18:13',
                 'created_at' => '2022-05-24 08:46:01',
                 'updated_at' => '2022-05-24 08:46:01',
-                'deleted_at' => NULL,
             ),
             3 => 
             array (
@@ -94,9 +94,9 @@ English, both written and spoken.',
 - Familiarity with the stacks listed above',
                 'salary' => '600 EUR / day',
                 'start_date' => '2022-06-13 00:00:00',
+                'deleted_at' => '2022-06-05 19:18:13',
                 'created_at' => '2022-06-05 15:30:59',
                 'updated_at' => '2022-06-05 13:30:59',
-                'deleted_at' => NULL,
             ),
             4 => 
             array (
@@ -128,9 +128,9 @@ Nice To Have
 - Automatisation',
                 'salary' => '800.000 HUF',
                 'start_date' => '2022-06-13 00:00:00',
+                'deleted_at' => '2022-06-05 19:18:13',
                 'created_at' => '2022-06-05 13:28:58',
                 'updated_at' => '2022-06-05 13:28:58',
-                'deleted_at' => NULL,
             ),
             5 => 
             array (
@@ -152,9 +152,9 @@ Hands-on experience with Kubernetes
 Further stacks: Docker, GO, Java, Jenkins',
                 'salary' => '1.200.000 HUF',
                 'start_date' => '2022-06-27 00:00:00',
+                'deleted_at' => '2022-06-05 19:18:13',
                 'created_at' => '2022-06-05 13:44:54',
                 'updated_at' => '2022-06-05 13:44:54',
-                'deleted_at' => NULL,
             ),
             6 => 
             array (
@@ -174,9 +174,9 @@ At least 1 year of professional experience
 Stacks: Linux OS, Python, pandas/numpy, SQL',
                 'salary' => '1.100.000 HUF',
                 'start_date' => '2022-06-13 00:00:00',
+                'deleted_at' => '2022-06-05 19:18:13',
                 'created_at' => '2022-06-05 16:44:29',
                 'updated_at' => '2022-06-05 14:44:29',
-                'deleted_at' => NULL,
             ),
         ));
         

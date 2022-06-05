@@ -76,7 +76,6 @@ class JobOpening extends Model
         $this->attributes['language_required'] = $language_required;
     }
 
-
     public function getJobTitle()
     {
         return strtoupper($this->attributes['job_title']);
