@@ -3,7 +3,7 @@
 @section('content')
 <div class="text-center">
     <h1>
-        Welcome to the Job Board application !
+        Welcome to the Job Board application!
     </h1>
 </div>
 @endsection

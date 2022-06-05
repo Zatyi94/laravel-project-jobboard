@@ -79,7 +79,7 @@ class JobOpening extends Model
 
     public function getJobTitle()
     {
-        return $this->attributes['job_title'];
+        return strtoupper($this->attributes['job_title']);
     }
 
     public function setJobTitle($job_title)
