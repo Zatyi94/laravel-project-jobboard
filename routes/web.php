@@ -26,3 +26,5 @@ Route::post('/admin/job_openings/store', 'App\Http\Controllers\AdminJobOpeningsC
 Route::post('/admin/job_openings/{id}/delete', 'App\Http\Controllers\AdminJobOpeningsController@delete')->name("admin.job_openings.delete");
 Route::get('/admin/job_openings/{id}/edit', 'App\Http\Controllers\AdminJobOpeningsController@edit')->name("admin.job_openings.edit");
 Route::post('/admin/job_openings/{id}/update', 'App\Http\Controllers\AdminJobOpeningsController@update')->name("admin.job_openings.update");
+
+Auth::routes();

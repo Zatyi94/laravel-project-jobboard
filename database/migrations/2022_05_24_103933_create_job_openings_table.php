@@ -24,9 +24,10 @@ return new class extends Migration
             $table->text('requirements');
             $table->string('salary');
             $table->string('start_date');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            // $table->timestamp('created_at');
+            // $table->timestamp('updated_at');
             $table->timestamp('deleted_at');
+            $table->timestamps();
         });
     }
 
