@@ -3,7 +3,7 @@
 @section('content')
 <div class="card mb-4">
     <div class="card-header">
-        Create Job Openings
+        Edit Job Openings
     </div>
     <div class="card-body">
         @if($errors->any())
