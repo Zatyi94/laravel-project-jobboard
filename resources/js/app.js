@@ -1,4 +1,4 @@
-// require('./bootstrap');
+require('./bootstrap');
 
 import {createApp} from "vue";      // vue könyvtárból creatApp függvény importálása
 import VueAxios from "vue-axios";   // VueAxios vue plugin importálása
