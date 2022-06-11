@@ -26,7 +26,6 @@
                     <th scope="col">Start Date</th>
                     <th scope="col">Created At</th>
                     <th scope="col">Updated At</th>
-                    <th scope="col">Deleted At</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
                 </tr>
@@ -46,7 +45,6 @@
                     <td>{{ $job_opening->getStartDate() }}</td>
                     <td>{{ $job_opening->getCreatedAt() }}</td>
                     <td>{{ $job_opening->getUpdatedAt() }}</td>
-                    <td>{{ $job_opening->getDeletedAt() }}</td>
                     <td><a class="btn btn-primary"
                             href="{{route('admin.job_openings.edit', ['id'=> $job_opening->getId()])}}">
                             <i class="bi bi-pencil-fill"></i>
