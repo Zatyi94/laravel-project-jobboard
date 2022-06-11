@@ -26,8 +26,8 @@ return new class extends Migration
             $table->string('start_date');
             // $table->timestamp('created_at');
             // $table->timestamp('updated_at');
-            $table->timestamp('deleted_at');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

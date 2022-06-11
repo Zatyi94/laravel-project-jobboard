@@ -14,12 +14,12 @@ class JobOpeningsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('job_openings')->delete();
-        
+
         \DB::table('job_openings')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'country' => 'Hungary',
@@ -30,12 +30,10 @@ class JobOpeningsTableSeeder extends Seeder
                 'job_description' => 'xyzzzzzzz',
                 'requirements' => 'ezisazis',
                 'salary' => '1.600.000 HUF',
-                'start_date' => '2022-02-23 08:00:00',
-                'deleted_at' => '2022-06-05 13:29:59',
-                'created_at' => '2022-06-05 15:29:59',
-                'updated_at' => '2022-06-05 13:29:59',
+                'start_date' => '2022-02-23',
+                'created_at' => '2022-06-11 17:16:05',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'country' => 'Austria',
@@ -49,12 +47,10 @@ Generates and presents reports for the management / customer.
 Direct reporting to the Country Head of Operations.
 Setting up the milestones for the project, PM, Budget Consumed analysis.',
                 'salary' => '60000 EUR',
-                'start_date' => '2022-08-24 08:39:04',
-                'deleted_at' => '2022-06-05 19:18:13',
-                'created_at' => '2022-05-24 08:43:09',
-                'updated_at' => '2022-05-24 08:43:09',
+                'start_date' => '2022-08-24',
+                'created_at' => '2022-06-11 17:16:05',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'country' => 'Hungary',
@@ -69,12 +65,10 @@ different IT systems.',
                 'requirements' => 'Excellent MS Office knowledge.
 English, both written and spoken.',
                 'salary' => '2000 EUR / month',
-                'start_date' => '2022-12-01 08:43:35',
-                'deleted_at' => '2022-06-05 19:18:13',
-                'created_at' => '2022-05-24 08:46:01',
-                'updated_at' => '2022-05-24 08:46:01',
+                'start_date' => '2022-12-01',
+                'created_at' => '2022-06-11 17:16:05',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'country' => 'Germany',
@@ -93,12 +87,10 @@ English, both written and spoken.',
 - At least 5 years of relevant work experience
 - Familiarity with the stacks listed above',
                 'salary' => '600 EUR / day',
-                'start_date' => '2022-06-13 00:00:00',
-                'deleted_at' => '2022-06-05 19:18:13',
-                'created_at' => '2022-06-05 15:30:59',
-                'updated_at' => '2022-06-05 13:30:59',
+                'start_date' => '2022-06-13',
+                'created_at' => '2022-06-11 17:16:05',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'country' => 'Hungary',
@@ -120,19 +112,17 @@ Communication with other teams and units',
 - Min. 1-1,5 years experiences in MySQL administration
 - English knowledge
 - Linux experiences
-- Willing to work in on-call duty 
+- Willing to work in on-call duty
 
 Nice To Have
 - MongoDB, CassandraDB, InnoDB
 - Ansible
 - Automatisation',
                 'salary' => '800.000 HUF',
-                'start_date' => '2022-06-13 00:00:00',
-                'deleted_at' => '2022-06-05 19:18:13',
-                'created_at' => '2022-06-05 13:28:58',
-                'updated_at' => '2022-06-05 13:28:58',
+                'start_date' => '2022-06-13',
+                'created_at' => '2022-06-11 17:16:05',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'country' => 'Hungary',
@@ -151,12 +141,10 @@ User level experience with Unix/Linux (e.g. Ubuntu)
 Hands-on experience with Kubernetes
 Further stacks: Docker, GO, Java, Jenkins',
                 'salary' => '1.200.000 HUF',
-                'start_date' => '2022-06-27 00:00:00',
-                'deleted_at' => '2022-06-05 19:18:13',
-                'created_at' => '2022-06-05 13:44:54',
-                'updated_at' => '2022-06-05 13:44:54',
+                'start_date' => '2022-06-27',
+                'created_at' => '2022-06-11 17:16:05',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'country' => 'Hungary',
@@ -173,13 +161,11 @@ Take ownership of internal user issues reported and seeing problems through to r
 At least 1 year of professional experience
 Stacks: Linux OS, Python, pandas/numpy, SQL',
                 'salary' => '1.100.000 HUF',
-                'start_date' => '2022-06-13 00:00:00',
-                'deleted_at' => '2022-06-05 19:18:13',
-                'created_at' => '2022-06-05 16:44:29',
-                'updated_at' => '2022-06-05 14:44:29',
+                'start_date' => '2022-06-13',
+                'created_at' => '2022-06-11 17:16:05',
             ),
         ));
-        
-        
+
+
     }
 }
